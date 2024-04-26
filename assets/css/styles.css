@@ -1,64 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-:root{
-    --primary-color: #0a003e;
-    --white-color: #FFFFFF;
-    --gap: 3rem;
-    --border-color: #9d9d9d;
-    --secundary-color: #000f39;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
-html {
-    font-size: 62.5%;
-}
-
-body{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2rem;
-    overflow-x: hidden;
-    
-}
-
-h1, h2, h3, h4, h5, h6{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 900;
-}
-
-h1{
-    font-size: 6rem;
-    text-transform: uppercase;
-}
-h2{
-    font-size: 5.5rem;
-}
-h3{
-    font-size: 5rem;
-}
-h4{
-    font-size: 4.5rem;
-}
-h5{
-    font-size: 4rem;
-}
-h6{
-    font-size: 3.5rem;
-}
-
-ul{
-    list-style: none;
-}
-
-a{
-    text-decoration: none;
-}
-
 .main-bg{
     background-image: url('../img/dragon-scales.svg');
     background-position: center center;
@@ -72,7 +13,7 @@ a{
 }
 
 .main-content{
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
     padding: var(--gap);
 }
@@ -82,12 +23,11 @@ a{
 }
 
 .menu{
-    background-color: var(--white-color);
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 0.1rem solid var(--border-color);
 }
 
 .menu h1{

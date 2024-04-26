@@ -28,6 +28,7 @@
     right: 0;
     left: 0;
     border-bottom: 0.1rem solid var(--border-color);
+    z-index: 1;
 }
 
 .menu h1{
@@ -75,3 +76,44 @@
     width: 50%;
     left: 25%;
 }
+
+.menu-spacing{
+    height: 64px;
+}
+
+.intro-content{
+    position: relative;
+    top: -6.4rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    height: 100vh
+}
+
+.intro-text, .intro-img{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+
+}
+
+
+.intro-img img, .intro-img svg{
+    max-width: 100%;
+    height: auto;
+}
+
+.about-me{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-me p{
+    max-width: 80rem;
+    padding: 3rem;
+}
+

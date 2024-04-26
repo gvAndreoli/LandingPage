@@ -117,6 +117,7 @@
 }
 
 .grid-one-content{
+    padding-top: 6rem;
     min-height: 100vh;
     display: flex;
     flex-flow: column;
@@ -133,3 +134,18 @@
     font-size: 3.5rem;
     font-weight: 500;
 }
+/* 
+.gallary-img{
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
+
+.gallary-img img{
+    transition: all 300ms ease-in-out;
+}
+
+.gallary-img img:hover{
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+} /

@@ -148,4 +148,56 @@
 
 .gallary-img img:hover{
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
-} /
+} */
+
+.center{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.github-content{
+    position: relative;
+    top: 20rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.github-content img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.contato-content{
+    position: relative;
+    top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    min-height: 100vh
+}
+
+.contato-text, .contato-img{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+
+}
+
+.contato-img svg{
+    max-width: 100%;
+    height: auto;
+}
+
+.contato-text ul li{
+    margin-right: 3rem;
+}
+
+.centralizadora{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 2rem;
+}

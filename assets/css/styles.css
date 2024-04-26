@@ -19,7 +19,7 @@
 }
 
 .section {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .menu{
@@ -87,7 +87,7 @@
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
-    height: 100vh
+    min-height: 100vh
 }
 
 .intro-text, .intro-img{
@@ -104,9 +104,9 @@
 }
 
 .about-me{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -114,6 +114,22 @@
 
 .about-me p{
     max-width: 80rem;
-    padding: 3rem;
 }
 
+.grid-one-content{
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+}
+
+.grid h3{
+    font-size: 3.5rem;
+    font-weight: 500;
+}

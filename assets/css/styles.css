@@ -2,8 +2,10 @@
 
 :root{
     --primary-color: #0a003e;
-    --white-color
-    : #FFFFFF;
+    --white-color: #FFFFFF;
+    --gap: 3rem;
+    --border-color: #9d9d9d;
+    --secundary-color: #000f39;
 }
 
 * {
@@ -49,6 +51,14 @@ h6{
     font-size: 3.5rem;
 }
 
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
 .main-bg{
     background-image: url('../img/dragon-scales.svg');
     background-position: center center;
@@ -64,9 +74,64 @@ h6{
 .main-content{
     max-width: 1200px;
     margin: 0 auto;
+    padding: var(--gap);
 }
 
 .section {
     height: 100vh;
 }
 
+.menu{
+    background-color: var(--white-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.menu h1{
+    font-size: 2.3rem;
+    color: var(--primary-color);
+}
+
+.menu h1 a{
+    color: inherit;
+}
+
+.menu-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul li a{
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: inherit;
+    position: relative;
+}
+
+.menu ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background-color: var(--secundary-color);
+    transition: all 150ms ease-in-out;
+}
+
+
+.menu ul li a:hover::after{
+    width: 50%;
+    left: 25%;
+}
